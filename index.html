@@ -1,29 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Studenti</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <div id="app">
-    <h1>Seznam studentů</h1>
-    <!-- Přidáváme prvek pro zobrazení tabulky -->
-    <div id="studentTable" class="highlighted"></div>
-    <!-- Původní seznam studentů -->
-    <ul id="studentList"></ul>
-    <div>
-      <label for="nameInput">Jméno:</label>
-      <input type="text" id="nameInput" placeholder="Zadejte jméno">
-      <label for="ageInput">Věk:</label>
-      <input type="number" id="ageInput" placeholder="Zadejte věk">
-      <button onclick="addStudent()">Přidat studenta0</button>
-    </div>
-  </div>
-
-  <script src="script.js"></script>
-</body>
+<html lang="cs-CZ">
+    <head>
+        <meta charset="UTF-8">
+        <title>Database Window</title>
+        <link rel="stylesheet" href="./styles.css">
+    </head>
+    <body>
+        <header>
+            <h1>User Registration</h1>
+        </header>
+        <nav>
+            <button onclick="showRegistrationForm()">Registration</button>
+            <button onclick="showLoginForm()">Login</button>
+            <button onclick="showUserList()">Delete DB</button>
+            <button onclick="deleteUser()">Delete Uživatele</button>
+            <button onclick="deleteDatabase()">Delete DB</button>
+        </nav>
+        <div id="content">
+            <!-- Tento kontent se dynamicky mění. -->
+        </div>
+        <script src="./main.js"></script>
+    </body>
 </html>
-
-#sss
